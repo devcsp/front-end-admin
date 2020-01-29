@@ -1,6 +1,7 @@
 {
-  "name": "paper-dashboard-react",
-  "version": "1.1.0",
+  "name": "devcsp-admin",
+  "version": "0.0.1",
+  "author": "Creative Tim, Lucas Polizeli",
   "private": true,
   "homepage": "https://www.admin.devcsp.site",
   "dependencies": {
