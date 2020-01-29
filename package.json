@@ -39,6 +39,11 @@
     "not ie <= 11",
     "not op_mini all"
   ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "optionalDependencies": {
     "@types/googlemaps": "3.36.2",
     "@types/markerclustererplus": "2.1.33",
@@ -46,5 +51,10 @@
     "ajv": "6.10.0",
     "jquery": "3.4.1",
     "typescript": "3.4.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.2.1"
   }
 }
