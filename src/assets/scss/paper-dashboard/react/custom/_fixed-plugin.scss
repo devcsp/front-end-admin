@@ -1,13 +1,12 @@
-.fixed-plugin{
-  .dropdown{
-    .dropdown-menu{
-
-      &:before{
+.fixed-plugin {
+  .dropdown {
+    .dropdown-menu {
+      &:before {
         right: -17px;
         top: 28%;
       }
 
-      &:after{
+      &:after {
         right: -16px;
         top: 28%;
       }
@@ -29,7 +28,13 @@
   }
   .gh-btn {
     background-color: #eee;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fcfcfc), color-stop(100%, #eee));
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0, #fcfcfc),
+      color-stop(100%, #eee)
+    );
     background-image: -webkit-linear-gradient(top, #fcfcfc 0, #eee 100%);
     background-image: -moz-linear-gradient(top, #fcfcfc 0, #eee 100%);
     background-image: -ms-linear-gradient(top, #fcfcfc 0, #eee 100%);
@@ -43,7 +48,13 @@
   .gh-btn:focus {
     text-decoration: none;
     background-color: #ddd;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(100%, #ddd));
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0, #eee),
+      color-stop(100%, #ddd)
+    );
     background-image: -webkit-linear-gradient(top, #eee 0, #ddd 100%);
     background-image: -moz-linear-gradient(top, #eee 0, #ddd 100%);
     background-image: -ms-linear-gradient(top, #eee 0, #ddd 100%);
@@ -75,7 +86,7 @@
   }
   .gh-count:hover,
   .gh-count:focus {
-    color: #4183C4;
+    color: #4183c4;
   }
   .gh-count:before,
   .gh-count:after {
@@ -129,19 +140,19 @@
     margin-top: -7px;
     border-width: 7px 7px 7px 0;
   }
-  .github-btn{
+  .github-btn {
     display: inline-block;
-    .gh-btn{
-      .gh-ico{
+    .gh-btn {
+      .gh-ico {
         margin-top: 3px;
       }
     }
   }
-  .SocialMediaShareButton{
+  .SocialMediaShareButton {
     display: inline-block;
   }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
   .fixed-plugin .dropdown-menu {
     width: 250px;
   }

@@ -16,13 +16,13 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
-import { NavLink } from "react-router-dom";
-import { Nav } from "reactstrap";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { Nav } from 'reactstrap';
 // javascript plugin used to create scrollbars on windows
-import PerfectScrollbar from "perfect-scrollbar";
+import PerfectScrollbar from 'perfect-scrollbar';
 
-import logo from "logo.svg";
+import logo from 'logo.svg';
 
 var ps;
 
@@ -34,18 +34,18 @@ class Sidebar extends React.Component {
   }
   // verifies if routeName is the one active (in browser input)
   activeRoute(routeName) {
-    return this.props.location.pathname.indexOf(routeName) > -1 ? "active" : "";
+    return this.props.location.pathname.indexOf(routeName) > -1 ? 'active' : '';
   }
   componentDidMount() {
-    if (navigator.platform.indexOf("Win") > -1) {
+    if (navigator.platform.indexOf('Win') > -1) {
       ps = new PerfectScrollbar(this.sidebar.current, {
         suppressScrollX: true,
-        suppressScrollY: false
+        suppressScrollY: false,
       });
     }
   }
   componentWillUnmount() {
-    if (navigator.platform.indexOf("Win") > -1) {
+    if (navigator.platform.indexOf('Win') > -1) {
       ps.destroy();
     }
   }
@@ -79,7 +79,7 @@ class Sidebar extends React.Component {
                 <li
                   className={
                     this.activeRoute(prop.path) +
-                    (prop.pro ? " active-pro" : "")
+                    (prop.pro ? ' active-pro' : '')
                   }
                   key={key}
                 >

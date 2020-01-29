@@ -16,9 +16,9 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react';
 // react plugin used to create charts
-import { Line, Pie } from "react-chartjs-2";
+import { Line, Pie } from 'react-chartjs-2';
 // reactstrap components
 import {
   Card,
@@ -27,14 +27,14 @@ import {
   CardFooter,
   CardTitle,
   Row,
-  Col
-} from "reactstrap";
+  Col,
+} from 'reactstrap';
 // core components
 import {
   dashboard24HoursPerformanceChart,
   dashboardEmailStatisticsChart,
-  dashboardNASDAQChart
-} from "variables/charts.jsx";
+  dashboardNASDAQChart,
+} from 'variables/charts.jsx';
 
 class Dashboard extends React.Component {
   render() {
@@ -186,9 +186,9 @@ class Dashboard extends React.Component {
                 </CardBody>
                 <CardFooter>
                   <div className="legend">
-                    <i className="fa fa-circle text-primary" /> Opened{" "}
-                    <i className="fa fa-circle text-warning" /> Read{" "}
-                    <i className="fa fa-circle text-danger" /> Deleted{" "}
+                    <i className="fa fa-circle text-primary" /> Opened{' '}
+                    <i className="fa fa-circle text-warning" /> Read{' '}
+                    <i className="fa fa-circle text-danger" /> Deleted{' '}
                     <i className="fa fa-circle text-gray" /> Unopened
                   </div>
                   <hr />
@@ -214,7 +214,7 @@ class Dashboard extends React.Component {
                 </CardBody>
                 <CardFooter>
                   <div className="chart-legend">
-                    <i className="fa fa-circle text-info" /> Tesla Model S{" "}
+                    <i className="fa fa-circle text-info" /> Tesla Model S{' '}
                     <i className="fa fa-circle text-warning" /> BMW 5 Series
                   </div>
                   <hr />

@@ -16,16 +16,16 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react';
 // react plugin used to create google maps
 import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
-  Marker
-} from "react-google-maps";
+  Marker,
+} from 'react-google-maps';
 // reactstrap components
-import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
+import { Card, CardHeader, CardBody, Row, Col } from 'reactstrap';
 
 const MapWrapper = withScriptjs(
   withGoogleMap(props => (
@@ -36,135 +36,135 @@ const MapWrapper = withScriptjs(
         scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
         styles: [
           {
-            featureType: "water",
+            featureType: 'water',
             stylers: [
               {
-                saturation: 43
+                saturation: 43,
               },
               {
-                lightness: -11
+                lightness: -11,
               },
               {
-                hue: "#0088ff"
-              }
-            ]
+                hue: '#0088ff',
+              },
+            ],
           },
           {
-            featureType: "road",
-            elementType: "geometry.fill",
+            featureType: 'road',
+            elementType: 'geometry.fill',
             stylers: [
               {
-                hue: "#ff0000"
+                hue: '#ff0000',
               },
               {
-                saturation: -100
+                saturation: -100,
               },
               {
-                lightness: 99
-              }
-            ]
+                lightness: 99,
+              },
+            ],
           },
           {
-            featureType: "road",
-            elementType: "geometry.stroke",
+            featureType: 'road',
+            elementType: 'geometry.stroke',
             stylers: [
               {
-                color: "#808080"
+                color: '#808080',
               },
               {
-                lightness: 54
-              }
-            ]
+                lightness: 54,
+              },
+            ],
           },
           {
-            featureType: "landscape.man_made",
-            elementType: "geometry.fill",
+            featureType: 'landscape.man_made',
+            elementType: 'geometry.fill',
             stylers: [
               {
-                color: "#ece2d9"
-              }
-            ]
+                color: '#ece2d9',
+              },
+            ],
           },
           {
-            featureType: "poi.park",
-            elementType: "geometry.fill",
+            featureType: 'poi.park',
+            elementType: 'geometry.fill',
             stylers: [
               {
-                color: "#ccdca1"
-              }
-            ]
+                color: '#ccdca1',
+              },
+            ],
           },
           {
-            featureType: "road",
-            elementType: "labels.text.fill",
+            featureType: 'road',
+            elementType: 'labels.text.fill',
             stylers: [
               {
-                color: "#767676"
-              }
-            ]
+                color: '#767676',
+              },
+            ],
           },
           {
-            featureType: "road",
-            elementType: "labels.text.stroke",
+            featureType: 'road',
+            elementType: 'labels.text.stroke',
             stylers: [
               {
-                color: "#ffffff"
-              }
-            ]
+                color: '#ffffff',
+              },
+            ],
           },
           {
-            featureType: "poi",
+            featureType: 'poi',
             stylers: [
               {
-                visibility: "off"
-              }
-            ]
+                visibility: 'off',
+              },
+            ],
           },
           {
-            featureType: "landscape.natural",
-            elementType: "geometry.fill",
+            featureType: 'landscape.natural',
+            elementType: 'geometry.fill',
             stylers: [
               {
-                visibility: "on"
+                visibility: 'on',
               },
               {
-                color: "#b8cb93"
-              }
-            ]
+                color: '#b8cb93',
+              },
+            ],
           },
           {
-            featureType: "poi.park",
+            featureType: 'poi.park',
             stylers: [
               {
-                visibility: "on"
-              }
-            ]
+                visibility: 'on',
+              },
+            ],
           },
           {
-            featureType: "poi.sports_complex",
+            featureType: 'poi.sports_complex',
             stylers: [
               {
-                visibility: "on"
-              }
-            ]
+                visibility: 'on',
+              },
+            ],
           },
           {
-            featureType: "poi.medical",
+            featureType: 'poi.medical',
             stylers: [
               {
-                visibility: "on"
-              }
-            ]
+                visibility: 'on',
+              },
+            ],
           },
           {
-            featureType: "poi.business",
+            featureType: 'poi.business',
             stylers: [
               {
-                visibility: "simplified"
-              }
-            ]
-          }
-        ]
+                visibility: 'simplified',
+              },
+            ],
+          },
+        ],
       }}
     >
       <Marker position={{ lat: 40.748817, lng: -73.985428 }} />
@@ -185,7 +185,7 @@ class Map extends React.Component {
                   <div
                     id="map"
                     className="map"
-                    style={{ position: "relative", overflow: "hidden" }}
+                    style={{ position: 'relative', overflow: 'hidden' }}
                   >
                     <MapWrapper
                       googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
