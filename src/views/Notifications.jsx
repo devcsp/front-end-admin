@@ -17,9 +17,9 @@
 
 */
 /*eslint-disable*/
-import React from "react";
+import React from 'react';
 // react plugin for creating notifications over the dashboard
-import NotificationAlert from "react-notification-alert";
+import NotificationAlert from 'react-notification-alert';
 // reactstrap components
 import {
   UncontrolledAlert,
@@ -30,12 +30,12 @@ import {
   CardBody,
   CardTitle,
   Row,
-  Col
-} from "reactstrap";
+  Col,
+} from 'reactstrap';
 
 class Notifications extends React.Component {
   state = {
-    visible: true
+    visible: true,
   };
   notificationAlert = React.createRef();
   notify(place) {
@@ -43,19 +43,19 @@ class Notifications extends React.Component {
     var type;
     switch (color) {
       case 1:
-        type = "primary";
+        type = 'primary';
         break;
       case 2:
-        type = "success";
+        type = 'success';
         break;
       case 3:
-        type = "danger";
+        type = 'danger';
         break;
       case 4:
-        type = "warning";
+        type = 'warning';
         break;
       case 5:
-        type = "info";
+        type = 'info';
         break;
       default:
         break;
@@ -72,8 +72,8 @@ class Notifications extends React.Component {
         </div>
       ),
       type: type,
-      icon: "nc-icon nc-bell-55",
-      autoDismiss: 7
+      icon: 'nc-icon nc-bell-55',
+      autoDismiss: 7,
     };
     this.notificationAlert.current.notificationAlert(options);
   }
@@ -88,14 +88,14 @@ class Notifications extends React.Component {
                 <CardHeader>
                   <CardTitle tag="h5">Notifications</CardTitle>
                   <p className="card-category">
-                    Handcrafted by our colleague{" "}
+                    Handcrafted by our colleague{' '}
                     <a
                       target="_blank"
                       href="https://www.instagram.com/manu.nazare/"
                     >
                       Nazare Emanuel-Ioan (Manu)
                     </a>
-                    . Please checkout the{" "}
+                    . Please checkout the{' '}
                     <a
                       href="https://github.com/creativetimofficial/react-notification-alert"
                       target="_blank"
@@ -220,7 +220,7 @@ class Notifications extends React.Component {
                             <Button
                               block
                               color="primary"
-                              onClick={() => this.notify("tl")}
+                              onClick={() => this.notify('tl')}
                             >
                               Top Left
                             </Button>
@@ -229,7 +229,7 @@ class Notifications extends React.Component {
                             <Button
                               block
                               color="primary"
-                              onClick={() => this.notify("tc")}
+                              onClick={() => this.notify('tc')}
                             >
                               Top Center
                             </Button>
@@ -238,7 +238,7 @@ class Notifications extends React.Component {
                             <Button
                               block
                               color="primary"
-                              onClick={() => this.notify("tr")}
+                              onClick={() => this.notify('tr')}
                             >
                               Top Right
                             </Button>
@@ -253,7 +253,7 @@ class Notifications extends React.Component {
                             <Button
                               block
                               color="primary"
-                              onClick={() => this.notify("bl")}
+                              onClick={() => this.notify('bl')}
                             >
                               Bottom Left
                             </Button>
@@ -262,7 +262,7 @@ class Notifications extends React.Component {
                             <Button
                               block
                               color="primary"
-                              onClick={() => this.notify("bc")}
+                              onClick={() => this.notify('bc')}
                             >
                               Bottom Center
                             </Button>
@@ -271,7 +271,7 @@ class Notifications extends React.Component {
                             <Button
                               block
                               color="primary"
-                              onClick={() => this.notify("br")}
+                              onClick={() => this.notify('br')}
                             >
                               Bottom Right
                             </Button>

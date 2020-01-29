@@ -16,23 +16,23 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import { Button } from "reactstrap";
+import { Button } from 'reactstrap';
 
 class FixedPlugin extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      classes: "dropdown show"
+      classes: 'dropdown show',
     };
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-    if (this.state.classes === "dropdown") {
-      this.setState({ classes: "dropdown show" });
+    if (this.state.classes === 'dropdown') {
+      this.setState({ classes: 'dropdown show' });
     } else {
-      this.setState({ classes: "dropdown" });
+      this.setState({ classes: 'dropdown' });
     }
   }
   render() {
@@ -48,24 +48,24 @@ class FixedPlugin extends Component {
               <div className="badge-colors text-center">
                 <span
                   className={
-                    this.props.bgColor === "black"
-                      ? "badge filter badge-dark active"
-                      : "badge filter badge-dark"
+                    this.props.bgColor === 'black'
+                      ? 'badge filter badge-dark active'
+                      : 'badge filter badge-dark'
                   }
                   data-color="black"
                   onClick={() => {
-                    this.props.handleBgClick("black");
+                    this.props.handleBgClick('black');
                   }}
                 />
                 <span
                   className={
-                    this.props.bgColor === "white"
-                      ? "badge filter badge-light active"
-                      : "badge filter badge-light"
+                    this.props.bgColor === 'white'
+                      ? 'badge filter badge-light active'
+                      : 'badge filter badge-light'
                   }
                   data-color="white"
                   onClick={() => {
-                    this.props.handleBgClick("white");
+                    this.props.handleBgClick('white');
                   }}
                 />
               </div>
@@ -75,57 +75,57 @@ class FixedPlugin extends Component {
               <div className="badge-colors text-center">
                 <span
                   className={
-                    this.props.activeColor === "primary"
-                      ? "badge filter badge-primary active"
-                      : "badge filter badge-primary"
+                    this.props.activeColor === 'primary'
+                      ? 'badge filter badge-primary active'
+                      : 'badge filter badge-primary'
                   }
                   data-color="primary"
                   onClick={() => {
-                    this.props.handleActiveClick("primary");
+                    this.props.handleActiveClick('primary');
                   }}
                 />
                 <span
                   className={
-                    this.props.activeColor === "info"
-                      ? "badge filter badge-info active"
-                      : "badge filter badge-info"
+                    this.props.activeColor === 'info'
+                      ? 'badge filter badge-info active'
+                      : 'badge filter badge-info'
                   }
                   data-color="info"
                   onClick={() => {
-                    this.props.handleActiveClick("info");
+                    this.props.handleActiveClick('info');
                   }}
                 />
                 <span
                   className={
-                    this.props.activeColor === "success"
-                      ? "badge filter badge-success active"
-                      : "badge filter badge-success"
+                    this.props.activeColor === 'success'
+                      ? 'badge filter badge-success active'
+                      : 'badge filter badge-success'
                   }
                   data-color="success"
                   onClick={() => {
-                    this.props.handleActiveClick("success");
+                    this.props.handleActiveClick('success');
                   }}
                 />
                 <span
                   className={
-                    this.props.activeColor === "warning"
-                      ? "badge filter badge-warning active"
-                      : "badge filter badge-warning"
+                    this.props.activeColor === 'warning'
+                      ? 'badge filter badge-warning active'
+                      : 'badge filter badge-warning'
                   }
                   data-color="warning"
                   onClick={() => {
-                    this.props.handleActiveClick("warning");
+                    this.props.handleActiveClick('warning');
                   }}
                 />
                 <span
                   className={
-                    this.props.activeColor === "danger"
-                      ? "badge filter badge-danger active"
-                      : "badge filter badge-danger"
+                    this.props.activeColor === 'danger'
+                      ? 'badge filter badge-danger active'
+                      : 'badge filter badge-danger'
                   }
                   data-color="danger"
                   onClick={() => {
-                    this.props.handleActiveClick("danger");
+                    this.props.handleActiveClick('danger');
                   }}
                 />
               </div>
