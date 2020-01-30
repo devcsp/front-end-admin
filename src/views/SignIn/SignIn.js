@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Input, Button } from 'reactstrap';
 import styled from 'styled-components';
-import devcImage from '../../assets/img/logo-devc.png';
+import { Input, Button } from 'reactstrap';
+import devcImage from 'assets/img/logo-devc.png';
+import { tryAuthenticate } from 'services/authService';
 import { breakpoint } from 'styled-components-breakpoint';
 
 const Container = styled.div`
@@ -42,8 +43,11 @@ function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  function handleOnClickToLogin() {
-    console.log('cliquei');
+  async function handleOnClickToLogin() {
+    const isUserAuthenticated = await tryAuthenticate({ email, password });
+    if (!isUserAuthenticated) return;
+
+    localStorage.setItem('authentication', isUserAuthenticated.data.token);
   }
 
   function handleOnChangeEmail({ target: { value: emailToUpdate } }) {

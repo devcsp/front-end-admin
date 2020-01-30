@@ -1,6 +1,6 @@
 import React from 'react';
 import Routes from 'routes';
-import history from 'services/history';
+import history from 'config/history';
 import { Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
