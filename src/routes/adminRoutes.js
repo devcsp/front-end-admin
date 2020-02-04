@@ -2,10 +2,10 @@
 // import Notifications from 'views/Notifications.jsx';
 // import Icons from 'views/Icons.jsx';
 // import Typography from 'views/Typography.jsx';
-// import TableList from 'views/Tables.jsx';
+import TableList from 'views/Tables.jsx';
 // import Maps from 'views/Map.jsx';
 // import UserPage from 'views/User.jsx';
-import Users from 'views/User.jsx';
+import Users from 'views/Users';
 // import UpgradeToPro from 'views/Upgrade.jsx';
 
 var routes = [
